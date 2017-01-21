@@ -3,5 +3,43 @@
     ViewBag.Title = "Grupos de Produtos";
 }
 
-<h2>Grupos de Produtos</h2>
+<div id="cadastro">
+    <section id="cadastro_cabecalho">
+        <h1>@ViewBag.Title</h1>
+    </section>
+    <section id="cadastro_conteudo">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box">
+                    <div id="cabecalho_gridclass="row">
+                        <a id="btn_incluir" class="btn btn-success" role="button"> <i class="glyphicon glyphicon-plus"> Incluir</i></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table id="grid_cadastro" class="table table-bordered table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Ativo</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <a class="btn btn-primary btn-alterar" role="button"> <i class="glyphicon glyphicon-pencil"> Alterar</i></a>
+                                            <a class="btn btn-danger btn-excluir" role="button"> <i class="glyphicon glyphicon-trash"> Excluir</i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
